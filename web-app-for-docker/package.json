@@ -4,7 +4,8 @@
   "description": "web app to create a docker container",
   "main": "index.js",
   "scripts": {
-    "serve": "node index.js"
+    "serve": "node index.js",
+    "build": "docker build -t zigoto/web-app-for-docker:latest -f docker/Dockerfile ."
   },
   "author": "",
   "license": "ISC",
