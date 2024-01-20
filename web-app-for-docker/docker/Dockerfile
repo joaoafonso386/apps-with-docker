@@ -4,8 +4,9 @@ FROM node:21-alpine
 WORKDIR /app
 
 #Install dependencies 
-COPY .. .
+COPY ../package.json .
 RUN npm install
+COPY .. .
 
 #Default command
 CMD ["npm", "run", "serve"]
