@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "app to show server visits counter",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "serve": "node index.js",
     "build": "docker build -t zigoto/docker-visits:latest -f docker/Dockerfile .",

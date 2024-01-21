@@ -1,19 +1,17 @@
-const express = require("express")
-const redis = require("redis")
+import express from "express"
+import { createClient } from "redis"
 
 const PORT = 8081
 const app = express()
-const createClient = async () =>  {
-    try {
-        await redis.createClient().connect()
-    } catch(e) {
-        console.log('Redis Client Error', e)
-    }
+let client
 
-  await client.set('visits', 0)
+try {
+    client = await createClient({ legacyMode: true, socket: { host: "redis-server" } }).connect()
+    console.log("Connected to Redis!"); 
+    await client.set('visits', 0)
+} catch(e) {
+    console.log('Redis Client Error', e)
 }
-
-const client = createClient();
 
 
 app.get("/", (req, res) => {
