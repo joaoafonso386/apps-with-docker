@@ -2,4 +2,6 @@
 
 This a repo with small apps to better understand docker and kubernetes. 
 
-Each app has it's own README if you are interested in running the applications locally. The code is not the goal here. 
+Each app has it's own README if you are interested in running the applications locally. The code is not the goal here.
+
+(all scripts should be run from inside each app folder)
