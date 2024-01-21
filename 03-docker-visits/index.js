@@ -4,12 +4,15 @@ const redis = require("redis")
 const PORT = 8081
 const app = express()
 const createClient = async () =>  {
-   await redis.createClient()
-  .on('error', err => console.log('Redis Client Error', err))
-  .connect()
+    try {
+        await redis.createClient().connect()
+    } catch(e) {
+        console.log('Redis Client Error', e)
+    }
 
   await client.set('visits', 0)
 }
+
 const client = createClient();
 
 
