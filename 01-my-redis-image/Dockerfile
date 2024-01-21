@@ -2,11 +2,11 @@
 
 FROM alpine
 
-# Download and instal a dependecy
+# Download and instal dependecies
 
 RUN apk add --update gcc
 RUN apk add --update redis
 
-# Tell the image what to do when it starts as container
+# Run command
 
 CMD [ "redis-server" ]
