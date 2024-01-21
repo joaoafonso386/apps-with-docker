@@ -15,7 +15,7 @@ try {
 
 
 app.get("/", (req, res) => {
-    client.get('visits', (err, visits) =>{
+    client.get('visits', (_, visits) =>{
         res.send(`Number of visits ${visits}`)
         client.set('visits', parseInt(visits) + 1)
     })

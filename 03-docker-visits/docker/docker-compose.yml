@@ -4,7 +4,8 @@ services:
     image: redis
   node-app:
     # Build the image locally with npm run docker:build 
-    image: zigoto/docker-visits
+    image: zigoto/docker-visits:latest
+    restart: always
     build: 
       context: ..
       dockerfile: docker/Dockerfile
