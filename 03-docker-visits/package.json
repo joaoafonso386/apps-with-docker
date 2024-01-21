@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "serve": "node index.js",
-    "build": "docker build -t zigoto/docker-visits:latest -f docker/Dockerfile .",
+    "docker:build": "docker build -t zigoto/docker-visits:latest -f docker/Dockerfile .",
+    "docker:run": "docker compose -f docker/docker-compose.yml up",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
