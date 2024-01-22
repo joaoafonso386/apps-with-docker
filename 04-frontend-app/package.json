@@ -15,7 +15,9 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "WATCHPACK_POLLING=true react-scripts start",
+    "docker:build": "docker build -t zigoto/frontend-app:latest -f docker/Dockerfile.dev .",
+    "docker:run": "docker run -p 3000:3000 -v /app/node_modules -v /c/Users/J_Afo/Documents/PROGRAMMING/Side-Projects/docker-k8s/04-frontend-app:/app zigoto/frontend-app",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
