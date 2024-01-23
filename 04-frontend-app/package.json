@@ -16,9 +16,10 @@
   },
   "scripts": {
     "start": "WATCHPACK_POLLING=true react-scripts start",
-    "docker:build": "docker build -t zigoto/frontend-app:latest -f docker/Dockerfile.dev .",
-    "docker:compose": "docker compose -f docker/docker-compose.yaml up -d",
-    "docker:test": "docker exec -it frontend-app npm run test",
+    "docker-build:dev": "docker build -t zigoto/frontend-app:latest -f docker/Dockerfile.dev .",
+    "docker-build:prod": "docker build -t zigoto/frontend-app-prod:latest -f docker/Dockerfile .",
+    "docker-compose": "docker compose -f docker/docker-compose.yaml up -d",
+    "docker-test": "docker exec -it frontend-app npm run test",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
