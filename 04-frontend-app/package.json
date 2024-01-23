@@ -17,8 +17,8 @@
   "scripts": {
     "start": "WATCHPACK_POLLING=true react-scripts start",
     "docker:build": "docker build -t zigoto/frontend-app:latest -f docker/Dockerfile.dev .",
-    "docker:compose": "docker compose -f docker/docker-compose.yaml up",
-    "docker:test": "docker run -it zigoto/frontend-app npm run test",
+    "docker:compose": "docker compose -f docker/docker-compose.yaml up -d",
+    "docker:test": "docker exec -it frontend-app npm run test",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
