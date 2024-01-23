@@ -1,6 +1,8 @@
 version: '3'
 services:
   frontend-app:
+    container_name: frontend-app
+    image: zigoto/frontend-app
     build:
       context: ..
       dockerfile: docker/Dockerfile.dev
