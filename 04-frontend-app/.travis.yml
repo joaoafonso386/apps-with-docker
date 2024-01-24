@@ -4,3 +4,6 @@ services:
 
 before_install: 
   - docker build -t zigoto/frontend-app:latest -f docker/Dockerfile.dev .
+
+script:
+  - docker run -e CI=true zigoto/frontend-app:latest npm run test
