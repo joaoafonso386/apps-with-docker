@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Trigger Travis CI!
+          Trigger Travis CI! Learn react
         </a>
       </header>
     </div>
