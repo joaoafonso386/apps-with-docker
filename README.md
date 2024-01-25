@@ -1,4 +1,4 @@
-# DOCKER & KUBERNETES REPO
+# DOCKER REPO
 
 This a repo with small apps to better understand docker. 
 
