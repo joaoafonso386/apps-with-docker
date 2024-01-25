@@ -2,6 +2,14 @@
 
 React app that serves as example to be containerized and used to build a CI pipeline (with travis).
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 -- AUTO GENERATED --
 
 # Getting Started with Create React App
