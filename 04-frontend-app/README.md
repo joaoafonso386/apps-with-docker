@@ -1,6 +1,8 @@
 # Frontend app
 
-Containerize the app and add a CI integration with Travis CI.
+React app that serves as example to be containerized and used to build a CI pipeline (with travis).
+
+-- AUTO GENERATED --
 
 # Getting Started with Create React App
 
