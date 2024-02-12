@@ -1,4 +1,4 @@
-# DOCKER REPO
+# Docker Repo
 
 This a repo with small apps to better understand docker. 
 
